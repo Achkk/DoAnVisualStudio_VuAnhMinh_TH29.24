@@ -39,9 +39,10 @@ Partial Class frmSinhVien
         ' picAvatar
         ' 
         picAvatar.BackColor = SystemColors.ActiveCaption
+        picAvatar.Image = My.Resources.Resources.user_profile
         picAvatar.Location = New Point(39, 30)
         picAvatar.Name = "picAvatar"
-        picAvatar.Size = New Size(129, 169)
+        picAvatar.Size = New Size(129, 134)
         picAvatar.TabIndex = 0
         picAvatar.TabStop = False
         ' 

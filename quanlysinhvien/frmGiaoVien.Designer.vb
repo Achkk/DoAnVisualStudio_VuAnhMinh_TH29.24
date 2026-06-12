@@ -29,11 +29,14 @@ Partial Class FrmGiaoVien
         btnQuanLyLop = New Button()
         btnQuanLySV = New Button()
         pnlNoiDung = New Panel()
+        PictureBox1 = New PictureBox()
         pnlMenu.SuspendLayout()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' pnlMenu
         ' 
+        pnlMenu.Controls.Add(PictureBox1)
         pnlMenu.Controls.Add(btnDangXuat)
         pnlMenu.Controls.Add(btnTKGV)
         pnlMenu.Controls.Add(btnTKSV)
@@ -46,7 +49,7 @@ Partial Class FrmGiaoVien
         ' 
         ' btnDangXuat
         ' 
-        btnDangXuat.Location = New Point(3, 361)
+        btnDangXuat.Location = New Point(3, 381)
         btnDangXuat.Name = "btnDangXuat"
         btnDangXuat.Size = New Size(211, 55)
         btnDangXuat.TabIndex = 6
@@ -55,7 +58,7 @@ Partial Class FrmGiaoVien
         ' 
         ' btnTKGV
         ' 
-        btnTKGV.Location = New Point(3, 300)
+        btnTKGV.Location = New Point(3, 320)
         btnTKGV.Name = "btnTKGV"
         btnTKGV.Size = New Size(211, 55)
         btnTKGV.TabIndex = 5
@@ -64,7 +67,7 @@ Partial Class FrmGiaoVien
         ' 
         ' btnTKSV
         ' 
-        btnTKSV.Location = New Point(3, 239)
+        btnTKSV.Location = New Point(3, 259)
         btnTKSV.Name = "btnTKSV"
         btnTKSV.Size = New Size(211, 55)
         btnTKSV.TabIndex = 4
@@ -73,7 +76,7 @@ Partial Class FrmGiaoVien
         ' 
         ' btnQuanLyLop
         ' 
-        btnQuanLyLop.Location = New Point(3, 178)
+        btnQuanLyLop.Location = New Point(3, 198)
         btnQuanLyLop.Name = "btnQuanLyLop"
         btnQuanLyLop.Size = New Size(211, 55)
         btnQuanLyLop.TabIndex = 2
@@ -82,7 +85,7 @@ Partial Class FrmGiaoVien
         ' 
         ' btnQuanLySV
         ' 
-        btnQuanLySV.Location = New Point(3, 117)
+        btnQuanLySV.Location = New Point(3, 137)
         btnQuanLySV.Name = "btnQuanLySV"
         btnQuanLySV.Size = New Size(211, 55)
         btnQuanLySV.TabIndex = 0
@@ -96,6 +99,15 @@ Partial Class FrmGiaoVien
         pnlNoiDung.Size = New Size(949, 543)
         pnlNoiDung.TabIndex = 1
         ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Image = My.Resources.Resources.Audience_Reach
+        PictureBox1.Location = New Point(44, 3)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(128, 128)
+        PictureBox1.TabIndex = 7
+        PictureBox1.TabStop = False
+        ' 
         ' FrmGiaoVien
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
@@ -106,6 +118,7 @@ Partial Class FrmGiaoVien
         Name = "FrmGiaoVien"
         Text = "Giáo Viên"
         pnlMenu.ResumeLayout(False)
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
     End Sub
 
@@ -116,4 +129,5 @@ Partial Class FrmGiaoVien
     Friend WithEvents btnDangXuat As Button
     Friend WithEvents btnTKGV As Button
     Friend WithEvents btnTKSV As Button
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

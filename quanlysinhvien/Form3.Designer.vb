@@ -24,16 +24,17 @@ Partial Class Form3
     Private Sub InitializeComponent()
         btnDangKy = New Button()
         btnHuy = New Button()
-        Button3 = New Button()
         Label1 = New Label()
         Label2 = New Label()
         txtUsername = New TextBox()
         txtPassword = New TextBox()
+        PictureBox1 = New PictureBox()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' btnDangKy
         ' 
-        btnDangKy.Location = New Point(114, 173)
+        btnDangKy.Location = New Point(99, 208)
         btnDangKy.Name = "btnDangKy"
         btnDangKy.Size = New Size(94, 29)
         btnDangKy.TabIndex = 0
@@ -42,26 +43,17 @@ Partial Class Form3
         ' 
         ' btnHuy
         ' 
-        btnHuy.Location = New Point(214, 173)
+        btnHuy.Location = New Point(220, 208)
         btnHuy.Name = "btnHuy"
         btnHuy.Size = New Size(94, 29)
         btnHuy.TabIndex = 1
         btnHuy.Text = "Hủy"
         btnHuy.UseVisualStyleBackColor = True
         ' 
-        ' Button3
-        ' 
-        Button3.Location = New Point(314, 173)
-        Button3.Name = "Button3"
-        Button3.Size = New Size(94, 29)
-        Button3.TabIndex = 2
-        Button3.Text = "Button3"
-        Button3.UseVisualStyleBackColor = True
-        ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(69, 52)
+        Label1.Location = New Point(63, 145)
         Label1.Name = "Label1"
         Label1.Size = New Size(80, 20)
         Label1.TabIndex = 3
@@ -70,7 +62,7 @@ Partial Class Form3
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(72, 84)
+        Label2.Location = New Point(66, 178)
         Label2.Name = "Label2"
         Label2.Size = New Size(77, 20)
         Label2.TabIndex = 4
@@ -78,41 +70,51 @@ Partial Class Form3
         ' 
         ' txtUsername
         ' 
-        txtUsername.Location = New Point(155, 49)
+        txtUsername.Location = New Point(149, 142)
         txtUsername.Name = "txtUsername"
         txtUsername.Size = New Size(194, 27)
         txtUsername.TabIndex = 5
         ' 
         ' txtPassword
         ' 
-        txtPassword.Location = New Point(155, 84)
+        txtPassword.Location = New Point(149, 175)
         txtPassword.Name = "txtPassword"
         txtPassword.Size = New Size(194, 27)
         txtPassword.TabIndex = 6
+        ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Image = My.Resources.Resources.Register
+        PictureBox1.Location = New Point(149, 12)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(117, 124)
+        PictureBox1.TabIndex = 7
+        PictureBox1.TabStop = False
         ' 
         ' Form3
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(498, 252)
+        ClientSize = New Size(426, 251)
+        Controls.Add(PictureBox1)
         Controls.Add(txtPassword)
         Controls.Add(txtUsername)
         Controls.Add(Label2)
         Controls.Add(Label1)
-        Controls.Add(Button3)
         Controls.Add(btnHuy)
         Controls.Add(btnDangKy)
         Name = "Form3"
         Text = "Đăng Ký"
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
 
     Friend WithEvents btnDangKy As Button
     Friend WithEvents btnHuy As Button
-    Friend WithEvents Button3 As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents txtUsername As TextBox
     Friend WithEvents txtPassword As TextBox
+    Friend WithEvents PictureBox1 As PictureBox
 End Class

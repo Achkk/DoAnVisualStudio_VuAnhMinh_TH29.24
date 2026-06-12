@@ -28,12 +28,14 @@ Partial Class Form1
         txtPassword = New TextBox()
         btnLogin = New Button()
         btnDangKy = New Button()
+        PictureBox1 = New PictureBox()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(47, 51)
+        Label1.Location = New Point(60, 145)
         Label1.Name = "Label1"
         Label1.Size = New Size(78, 20)
         Label1.TabIndex = 0
@@ -42,7 +44,7 @@ Partial Class Form1
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(48, 83)
+        Label2.Location = New Point(61, 175)
         Label2.Name = "Label2"
         Label2.Size = New Size(77, 20)
         Label2.TabIndex = 1
@@ -50,21 +52,21 @@ Partial Class Form1
         ' 
         ' txtUsername
         ' 
-        txtUsername.Location = New Point(138, 51)
+        txtUsername.Location = New Point(144, 142)
         txtUsername.Name = "txtUsername"
         txtUsername.Size = New Size(211, 27)
         txtUsername.TabIndex = 2
         ' 
         ' txtPassword
         ' 
-        txtPassword.Location = New Point(138, 84)
+        txtPassword.Location = New Point(144, 175)
         txtPassword.Name = "txtPassword"
         txtPassword.Size = New Size(211, 27)
         txtPassword.TabIndex = 3
         ' 
         ' btnLogin
         ' 
-        btnLogin.Location = New Point(100, 132)
+        btnLogin.Location = New Point(99, 208)
         btnLogin.Name = "btnLogin"
         btnLogin.Size = New Size(94, 29)
         btnLogin.TabIndex = 4
@@ -73,18 +75,28 @@ Partial Class Form1
         ' 
         ' btnDangKy
         ' 
-        btnDangKy.Location = New Point(200, 132)
+        btnDangKy.Location = New Point(241, 208)
         btnDangKy.Name = "btnDangKy"
         btnDangKy.Size = New Size(94, 29)
         btnDangKy.TabIndex = 5
         btnDangKy.Text = "Đăng Ký"
         btnDangKy.UseVisualStyleBackColor = True
         ' 
+        ' PictureBox1
+        ' 
+        PictureBox1.Image = My.Resources.Resources.Register
+        PictureBox1.Location = New Point(159, 12)
+        PictureBox1.Name = "PictureBox1"
+        PictureBox1.Size = New Size(117, 124)
+        PictureBox1.TabIndex = 6
+        PictureBox1.TabStop = False
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(8F, 20F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(488, 304)
+        ClientSize = New Size(447, 268)
+        Controls.Add(PictureBox1)
         Controls.Add(btnDangKy)
         Controls.Add(btnLogin)
         Controls.Add(txtPassword)
@@ -93,6 +105,7 @@ Partial Class Form1
         Controls.Add(Label1)
         Name = "Form1"
         Text = "Đăng Nhập"
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -103,5 +116,6 @@ Partial Class Form1
     Friend WithEvents txtPassword As TextBox
     Friend WithEvents btnLogin As Button
     Friend WithEvents btnDangKy As Button
+    Friend WithEvents PictureBox1 As PictureBox
 
 End Class

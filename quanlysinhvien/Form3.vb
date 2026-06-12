@@ -42,4 +42,5 @@ Public Class Form3
     Private Sub Huy_Click(sender As Object, e As EventArgs) Handles btnHuy.Click
         Me.Close()
     End Sub
+
 End Class
